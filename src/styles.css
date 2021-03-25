@@ -1,0 +1,255 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --maincolor: #eaeaea;
+    --secondarycolor:#fff;
+
+    --bordercolor:#c1c1c1;
+
+    --maintext:black;
+    --secondarytext:grey;
+}
+.s3{
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);    
+}
+html, body { 
+    height: 100%;
+    padding: 0;
+    margin:0;  
+}
+body { 
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--maintext);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 
+}
+p, li, span, label, input, textarea{
+    color: var(--secondarytext);
+    font-family: 'Cardo', serif;
+}
+
+a{
+    text-decoration: none;
+    color:#17a2b8;
+}
+
+ul{
+    list-style:none;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+.s1{
+    background-color: var(--maincolor);
+    border-bottom:1px solid var(--bordercolor);
+    overflow:auto;
+
+}
+
+.s2{
+    background-color: var(--secondarycolor);
+    border-bottom:1px solid var(--bordercolor);
+    overflow:auto;
+
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.gretting-wrapper{
+    display: grid;
+
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+    
+}
+
+.intro-wrapper{
+    background-color: var(--secondarycolor);
+    border: 1px solid var(--bordercolor);
+    border-radius: 6px 6px 0 0;
+
+    -webkit-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.41);
+    box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.41);
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2em 30em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+}
+.nav-wrapper{
+    border-radius: 6px 6px 0 0;
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--bordercolor);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e4e4e4;
+    
+}
+#navigation{
+    margin: 0;
+    padding: 10px;
+}
+#navigation li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.dot-wrapper{
+    display:flex
+
+}
+#dot-1{
+    background-color:#fc6058;
+}
+#dot-2{
+    background-color: #fec02f;
+}
+#dot-3{
+    background-color: #2aca3e;
+}
+.navigation{
+    margin: 5px
+}
+.browser-dot{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+.right-column{
+    grid-area: right-column;
+    padding-top: 80px;
+    padding-right: 20px;
+    
+}
+.left-column{
+    grid-area: left-column;
+    border-radius: 6px 6px 6px 6px;
+    padding-top: 50px;
+    padding-right: 60px;
+}
+#profile-pic{
+    display:block;
+    margin: 0 auto;
+
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    
+}
+#about-heading{
+    background-color:#e4e4e4 ;
+    text-align:center;
+    width: 120px;
+    height: 40px;
+}
+
+
+.education-heading{
+    background-color:#e4e4e4 ;
+    text-align:center;
+    width: 120px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.education-wrapper{
+    text-align: center;
+}
+
+.post-preview{
+    background-color:white ;
+    padding:15px;
+    padding-top: 15px;
+
+}
+
+.post-title{
+    color: black;
+    margin:0;
+}
+.post-intro{
+    color: var(--secondarytext);
+    font-size: 14px;
+}
+.hobby-wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.post{
+    border: 1px solid var(--bordercolor);
+    background-color: white;
+    -webkit-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.41);
+    box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.41);
+
+
+}
+.thumbnail{
+    display: block;
+    width: 100%;
+    height:180px ;
+    object-fit: cover;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--bordercolor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--maincolor);
+    margin-bottom: 50px;;
+}
+
+#contact-form label{
+    line-height: 2.6em;;
+}
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
+    border: 1px solid var(--bordercolor);
+    font-size: 14px;
+
+}
+
+#submit-btn{
+    margin-top:10px;
+    width:100%;
+    scroll-padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: black;
+    border:none;
+}
+
+
+
