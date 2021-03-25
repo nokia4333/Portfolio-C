@@ -2,12 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Hello</title>
+  <title>Portfolio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+
+
 </head>
-<body>
-  <app-root></app-root>
+<body class="mat-typography">
+  <!-- <app-root></app-root> -->
+  <section class="s3"> 
+      <div class="main-container">
+          <div class="gretting-wrapper">
+            <hr>
+            <h1>Hi, I'M DANIEL DANG</h1>
+          </div>
+          <div class="intro-wrapper">
+            <div class='nav-wrapper'>
+              <div class='dot-wrapper'>
+                <div id='dot-1' class='browser-dot'></div>
+                <div id='dot-2' class='browser-dot'></div>
+                <div id='dot-3' class='browser-dot'></div>
+              </div>
+              <ul id='navigation'>
+                <li><a href="#">Contact</a></li>
+              </ul>
+
+            </div>
+            <div class='left-column'>
+              <img id="profile-pic" src="assets/profile-pic.png">
+            </div>
+            <div class='right-column'>
+              <div id="about-heading">
+                <h3>About me</h3>
+              </div>
+                <p>Dedicated and detailed-oriented Cybersecurity bachelor's graduate with an ambition of becoming an IT professional. Responsible and hardworking, I am capable of wokring under pressure as well as communicate and collaborate seamlessly in a teamwork environment.
+                </p>
+            </div>
+
+          </div>
+          <a href="link" ></a>
+      </div>
+  </section>
+
+  <section class="s2"> 
+    <div class="main-container">
+      <div class='education-heading'>
+        <h3>Education</h3>
+      </div>
+      <div class='education-wrapper'>
+        <h5>Deakin University, Melbourne (03/2018 - 02/2020)</h5>
+        <p>Bachelor of Information Technology with Distinction majoring Security, Information Technology</p>
+        <h5>Deakin College, Melbourne (02/2017 - 02/2018)</h5>
+        <p>Diploma of Computing, Information Technology</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="s3"> 
+    <div class="main-container">
+      <h3 style="text-align: center";>Hobby</h3>
+      <div class="hobby-wrapper">
+        <div class="post">
+          <img class="thumbnail" src="assets/travel.jpg">
+          <div class="post-preview">
+            <h6 class="post-title">World Travelling</h6>
+            <p class="post-intro">I have visited over 10+ countries and been yearning to expand it as soon as the pandemic is over. I am a bit of a wanderlust who always seek adventures, learn new cultures and exploring every corner of the earth is my ultimate dream. I find travelling rejuvenating, soul enriching and educational.</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <img class="thumbnail" src="assets/gaming.jpg">
+          <div class="post-preview">
+            <h6 class="post-title">Competitive Gaming</h6>
+            <p class="post-intro">I have a passion for Esports, particularly League of Legends, it is like sports for you brain. It requires strategic skill as well as mental flexibility and toughness, the same characteristics that lead some people to recognize games such as chess and poker as sports.</p>
+          </div>
+        </div>
+
+        <div class="post">
+          <img class="thumbnail" src="assets/dancing.jpg">
+          <div class="post-preview">
+            <h6 class="post-title">Dancing</h6>
+            <p class="post-intro">To me, dancing is almost like finding a new person inside me. Whether it’s a gym class like Zumba, Ballet, Hip Hop, etc. or just in a room with my friends and family, I always find dancing is great way to help me stay physically and mentally active as well as instilling my confidence</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s2"> 
+    <div class="main-container">
+      <h3 style="text-align: center";>Get in touch</h3>
+      
+
+      <form id="contact-form">
+        <label>Name</label>
+        <input class="input-field" type="text" name="name">
+  
+        <label>Subject</label>
+        <input class="input-field" type="text" name="subject">
+  
+        <label>Email</label>
+        <input class="input-field" type="text" name="email">
+  
+        <label>Message</label>
+        <textarea class="input-field" type="text" name="name"></textarea>
+
+        <input id="submit-btn" type="submit" value="Send">
+
+      </form>
+     
+    </div>
+  </section>
 </body>
 </html>
