@@ -229,7 +229,7 @@ h6 { font-size: 16px;}
     background: #dd4b39;
     color: white;
   }
-@media screen and (max-width: 400px){
+@media only screen and (min-widht: 1000px){
 	#preview-shadow{
 		max-width: 280px;
 		height: 180px;
@@ -240,9 +240,27 @@ h6 { font-size: 16px;}
 	#preview{
 		width: 280px;
 
-	}
+    }
+    .main-container{
+        width: 50%
+    }
+    .gretting-wrapper{
+        width: 50%
+    }
+    .intro-wrapper{
+        width:50%
+    }
+    .nav-wrapper{
+        width: 50%
+    }
+    .dot-wrapper{
+        width: 50%
+    }
 
-}
+    }
+
+
+
 
 
 
